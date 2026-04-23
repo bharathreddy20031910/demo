@@ -10,7 +10,7 @@ const app = express()
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
-app.use(cors())
+app.use(cors({ origin: 'https://demo-2-mlgi.onrender.com' }))
 // app.use('/uploads', express.static('uploads')) // Removed since files are now stored in Cloudinary
 
 // API Routes
